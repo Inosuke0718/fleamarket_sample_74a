@@ -1,17 +1,13 @@
 %body.post-template
-
   %header.purchase-confirm
     =link_to image_tag(src="logo/logo.png", height: "50", width: "auto"), "/", class: "header-icon" 
-
   .wrapper-purchase-confirm
     %h2.title
       購入内容の確認
-    
+    .product-info__name
+      %p=@product.name
     %section.product-info
       = image_tag @product.product_photos[0].photo.url, class:"item-main-content__photo--big"
-      .product-info__name
-        =@product.name
-
     %section.product-info-sub
       .product-info-sub__price
         ="¥"+ "#{@product.price}"
@@ -19,19 +15,16 @@
         (税込)
       .main-content-sub__shipFee 
         = @product.bear
-
     %section.product-price
       .product-price__title
         支払い金額
       .product-price__amount
         ="¥"+ "#{@product.price}"
-
     %section.purchase-method
       .purchase-method__titile
         支払い方法
         - if Card.where(user_id: current_user.id).exists?
           =link_to "変更する", new_product_card_path(@product.id), method: :get , class: "change"
-        
           .purchase-method__how
             .purchase-method__how--name
               クレジットカード
@@ -44,11 +37,9 @@
               = @cardinfo.brand
         - else
           =link_to "新規登録", new_product_card_path(@product.id), method: :get , class: "change"
-
     %section.purchase-shipping
       .purchase-shipping__title
         配送先
-
       .purchase-shipping__where
         .purchase-shipping__where--pcode
           = "〒 " + "#{@user.address.postal_code}"
@@ -58,20 +49,16 @@
           = @user.address.city
           = @user.address.other
           = @user.address.building_name
-
         .purchase-shipping__where--name
-          = "氏名： " + "#{@user.last_name}" + "  " + "#{@user.first_name}"
+          = "氏名： " + "#{@user.address.send_last_name}" + "  " + "#{@user.address.send_first_name}"
     .purchase-btn
       - if Card.where(user: current_user).exists?
         =link_to "購入する", pay_product_cards_path(@product.id), method: :post , class: "purchase"
       - else
         決済方法を登録してください
-
   %footer.purchase-confirma
     .purchase-confirm__rule
       プライバシーポリシー FURIMA利用規約
       %br
         特定商取引に関する表記
       =link_to image_tag(src="logo/logo.png", height: "50", width: "auto"), "/", class: "footer-icon" 
-
-    
