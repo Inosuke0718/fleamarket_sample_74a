@@ -25,7 +25,7 @@ class CardsController < ApplicationController
           @cardinfo = Payjp::Customer.retrieve(card.customer_id).cards.data[0]
         elsif @cnt == 3
           @default_card_information3 = Payjp::Customer.retrieve(card.customer_id).cards.data[0]
-          @cardinfo　= Payjp::Customer.retrieve(card.customer_id).cards.data[0]
+          @cardinfo = Payjp::Customer.retrieve(card.customer_id).cards.data[0]
         end
       end
     end
