@@ -25,7 +25,6 @@ document.addEventListener(
             document.inputForm.submit();
             alert("クレジットカードの登録が完了しました。"); 
           } else {
-            debugger
             alert("入力された情報が正しくありません。再度お試しください。"); 
           }
         });
