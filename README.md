@@ -2,14 +2,26 @@
 
 ## 概要
 TECH:CAMPで、チーム開発を行い作成したフリマアプリです
+* Top画面
 ![main](https://user-images.githubusercontent.com/63226783/86332392-6fc3da00-bc85-11ea-8315-6f16b2cbd789.gif)
+* 購入画面
 ![login](https://user-images.githubusercontent.com/63226783/86332705-d812bb80-bc85-11ea-8e11-e6a8a5facd94.gif)
+* クレジット登録画面
 ![reg](https://i.gyazo.com/d8b0ed3e7403f9c0c31086e72b8a2656.png)
 
-
 ## 機能
-機能は以下の通りです。 
 ・ログイン機能・商品出品機能 ・商品情報編集機能 ・商品情報削除機能 ・商品購入機能 ・商品情報詳細機能 ・商品へのコメント機能
+
+## ・使用技術(開発環境)
+* Ruby 2.5.1, Rails 5.0.7.2
+* MySQL 5.6.47
+* Capistrano, Nginx, Puma, unicorn
+* AWS（VPC, EC2, RDS, Route 53, ALB, S3）
+* Pay.jp
+* RSpec
+* Sass, jQuery
+* Visual Studio Code  
+* Github
 
 
 ## usersテーブル
