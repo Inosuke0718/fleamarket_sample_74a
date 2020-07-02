@@ -4,8 +4,10 @@
 TECH:CAMPで、チーム開発を行い作成したフリマアプリです
 * Top画面
 ![main](https://user-images.githubusercontent.com/63226783/86332392-6fc3da00-bc85-11ea-8315-6f16b2cbd789.gif)
+
 * 購入画面
 ![login](https://user-images.githubusercontent.com/63226783/86332705-d812bb80-bc85-11ea-8e11-e6a8a5facd94.gif)
+
 * クレジット登録画面
 ![reg](https://i.gyazo.com/d8b0ed3e7403f9c0c31086e72b8a2656.png)
 
