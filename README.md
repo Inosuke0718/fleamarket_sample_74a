@@ -1,3 +1,17 @@
+# README
+
+## 概要
+TECH:CAMPで、チーム開発を行い作成したフリマアプリです
+
+## 機能
+機能は以下の通りです。 
+* ・ログイン機能
+![history](https://d2v9k5u4v94ulw.cloudfront.net/assets/images/5107682/original/51f2ebd8-241d-4a52-b0ef-78abcc571b05?1591183765)
+
+ ・商品出品機能 ・商品情報編集機能 ・商品情報削除機能 ・商品購入機能 ・商品情報詳細機能 ・商品へのコメント機能
+
+
+
 ## usersテーブル
 
 |Column|Type|Options|
